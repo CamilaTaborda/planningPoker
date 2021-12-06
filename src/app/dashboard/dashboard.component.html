@@ -1,0 +1,23 @@
+<df-header></df-header>
+<div class="dashboard-content">
+        <div class='voting-control-panel'>
+            <div class="container btn-container">
+                <button 
+                class="btn btn-info" 
+                                        
+                    (click)='onStartVoting()'>
+                        Iniciar Votação</button>
+                    
+
+                <button class="btn btn-warning" 
+                
+                    
+                    (click)='clear()'>
+                        Zerar pontuação</button>
+            </div>
+            <h3 *ngIf='showVotes'>Pontuação: {{total}}</h3>
+    <df-votePanel></df-votePanel>
+
+        </div>
+    <df-teamPanel></df-teamPanel>
+</div>

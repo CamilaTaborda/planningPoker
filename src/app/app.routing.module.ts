@@ -1,14 +1,14 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { NotFoundComponent } from './errors/not-found/not-found.component';
-import { SignInComponent } from './home/signin/signin.component';
-import { DashboardComponent } from './home/dashboard/dashboard.component';
+import { NotFoundComponent } from './errors/notFound/notFound.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import {LoginComponent} from './login/login.component';
 
 const routes: Routes = [
     { 
         path: '',
-        component: SignInComponent 
+        component: LoginComponent
     },     
     { 
         path: 'dashboard', 

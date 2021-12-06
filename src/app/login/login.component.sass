@@ -1,0 +1,87 @@
+@import './../../sass/colors'
+@import './../../sass/display'
+
+
+
+.login-component
+  font-size: 1.2em
+  font-family: Arial, Helvetica, sans-serif
+  font-size: 0.1em
+  display: flex
+  justify-content: center
+  padding-top: 4em
+  align-items: center
+
+.form-component
+  display: flex
+  font-family: Arial, Helvetica, sans-serif
+  flex-direction: column
+  width: 90%
+  max-width: 600px
+
+.form-component h2
+  text-align: center
+  font-family: Arial, Helvetica, sans-serif
+  background-color: $blue-light
+  border-radius: 0.5rem 0.5rem 0 0
+  padding: 0.5em
+  margin-bottom: 0 
+  color: $white
+
+
+.login-form
+  display: flex
+  flex-direction: column
+  font-family: Arial, Helvetica, sans-serif
+  font-size-adjust: 0.5em
+  background-color: $white-dark
+  padding: 0.5em
+  border-radius: 1rem 1rem
+
+.form-group
+  display: flex
+  font-family: Arial, Helvetica, sans-serif
+  flex-direction: column
+  align-content: center
+  justify-content: flex-start
+  
+
+.form-control
+  // /*
+  // text-align: left
+  // background: transparent
+  // display: flex
+  // flex-direction: column
+  // border-style: none
+  // border-bottom-style: dotted
+  // border-color: $clean-dark */
+
+#owner
+  flex-direction: row
+  flex-wrap: nowrap
+  justify-content: flex-end
+  padding-right: 0.25em
+
+.form-check-input
+  position: relative
+  margin-left: 0
+  margin-right: 0.75em
+
+.button-group
+  display: flex
+  flex-direction: row
+
+@media screen and (min-width: $screen-md-min) 
+  .login-component
+    font-size: 1.5em
+  .login-form
+    padding: 2em
+  .form-component h3
+    padding: 1em
+
+
+
+
+
+
+

@@ -20,6 +20,9 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "allowedCommonJsDependencies": [
+              "path-browserify", "path"
+            ],
             "outputPath": "dist/desafioPlanning",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -30,8 +33,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css",
-              "./node_modules/bootstrap/dist/css/bootstrap.css"
+              
             ],
             "scripts": []
           },

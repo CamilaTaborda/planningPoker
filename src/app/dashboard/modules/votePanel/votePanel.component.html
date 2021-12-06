@@ -1,0 +1,8 @@
+<div class="votingPanelComponent">
+    <df-card 
+        [disabled]='!cardDisabled' 
+        (cardSelected)='cardClicked ($event)' 
+        *ngFor="let item of listVotes; let i=index"
+        [value]='item'>
+    </df-card>
+</div>

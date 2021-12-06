@@ -1,0 +1,13 @@
+<div class="team-panel-component">
+    <div class="card-team-panel">
+        <h4 class="card-title">Usuários conectados:</h4>
+        <df-connectUser *ngFor="let user of usersList; let i=index" [user]='user'></df-connectUser>
+    </div>
+    <div  class="card-team-panel" >
+        <h4 class="card-title">Votos</h4>
+        <div *ngIf='hide' class="votes-container">
+            <df-userVotes *ngFor="let vote of voteList; let i=index" [vote]='vote'>
+            </df-userVotes>
+        </div>
+    </div>
+</div>
