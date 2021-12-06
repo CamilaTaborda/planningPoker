@@ -2,7 +2,7 @@ import { Component, Input, OnInit, Output } from '@angular/core';
 import { EventEmitter } from '@angular/core';
 
 @Component({
-  selector: 'df-card',//app-card
+  selector: 'df-card',
   templateUrl: 'card.component.html',
   styleUrls: ['card.component.sass']
 })

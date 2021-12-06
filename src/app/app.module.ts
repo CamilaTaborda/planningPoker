@@ -2,7 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { CommonModule } from '@angular/common';
-import {MatFormFieldModule, MAT_FORM_FIELD_DEFAULT_OPTIONS} from '@angular/material/form-field';
+import { MatDialogModule } from '@angular/material/dialog';
+
 
 import { AppRoutingModule } from './app.routing.module';
 import { ErrorsModule } from './errors/errors.module';
@@ -14,14 +15,14 @@ import { DashboardModule} from './dashboard/dashboard.module';
   declarations: [
     AppComponent
   ],
-  imports: [
-    MatFormFieldModule,
+  imports: [   
     BrowserModule,
     CommonModule,
     AppRoutingModule,
     ErrorsModule,
     DashboardModule,
     LoginModule,
+    MatDialogModule
    
 
   ],

@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject } from '@angular/core';
+import {MatDialog, MAT_DIALOG_DATA} from  '@angular/material/dialog'; 
 import { timer } from 'rxjs';
 
 import { AuthService } from 'src/app/services/auth/auth.service';
@@ -6,6 +7,7 @@ import { VotesService } from 'src/app/services/votes/votes.service';
 import { VotingSessionService } from 'src/app/services/votes/votingSession/votingSession.service';
 import { User } from 'src/app/shared/models/user/user';
 import { Vote } from 'src/app/shared/models/vote/vote';
+
 
 @Component({
   selector: 'df-dashboard',
@@ -24,9 +26,13 @@ export class DashboardComponent implements OnInit {
 
 
   constructor(
+  public dialog: MatDialog,
   private votesService: VotesService,
   private votingSessionService: VotingSessionService,
   private authService: AuthService  ) { }
+
+ 
+
 
   ngOnInit(): void {
     this.votingSessionService.alreadyVoted()
@@ -61,16 +67,5 @@ export class DashboardComponent implements OnInit {
   }
 
  
-
-  /*
-  oberserableTimer() {
-      const source = timer(1000, 2000);
-      const abc = source.subscribe(val => {
-        console.log(val, '-');
-        this.subscribeTimer = this.timeLeft - val;
-      });
-    }
-  */
-
-
 }
+

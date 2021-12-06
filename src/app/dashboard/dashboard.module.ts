@@ -6,14 +6,14 @@ import { DashboardComponent } from './dashboard.component';
 import { SharedModule } from './../shared/shared.module';
 import { VotingPanelModule } from './modules/votePanel/votePanel.module' ;
 import { TeamPanelModule } from './modules/teamPanel/teamPanel.module';
-import { DashModalComponent } from './dash-modal/dash-modal.component';
+
 
 
 
 @NgModule({
   declarations: [
     DashboardComponent,
-    DashModalComponent,
+  
     
       ],
   imports: [

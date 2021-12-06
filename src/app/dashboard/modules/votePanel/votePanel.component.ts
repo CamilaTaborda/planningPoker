@@ -45,9 +45,3 @@ export class VotingPanelComponent implements OnInit {
     console.log('Algo deu errado');
   }
 }
-/*
-function click(click: any) {
-  throw new Error('Function not implemented.');
-}
-*/
-
